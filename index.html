@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - BukuKita</title>
+  <link rel="icon" href="assets/logo.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="latar-login" data-page="login">
+  <main class="kotak-login">
+    <header>
+      <img src="assets/logo.png" alt="Logo BukuKita">
+      <h1>BukuKita</h1>
+      <p>Toko buku online</p>
+    </header>
+
+    <form id="form-login" novalidate>
+      <div class="form-grup">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="nama@email.com">
+      </div>
+      <div class="form-grup">
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Masukkan password">
+      </div>
+      <button type="submit" class="btn btn-penuh">Login</button>
+    </form>
+
+    <div class="link-bawah">
+      <button type="button" id="btn-lupa" class="btn btn-garis">Lupa Password</button>
+      <button type="button" id="btn-daftar" class="btn btn-garis">Daftar</button>
+    </div>
+    <p class="demo">Akun demo: damar@bukukita.id / damar123</p>
+  </main>
+
+  <script src="js/data.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

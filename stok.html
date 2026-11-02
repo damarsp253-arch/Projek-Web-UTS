@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Informasi Stok - BukuKita</title>
+  <link rel="icon" href="assets/logo.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="stok">
+  <header id="header" class="site-header"></header>
+
+  <main>
+    <section class="kartu">
+      <h1>Informasi Stok / Katalog</h1>
+      <div class="tabel-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Sampul</th><th>Kode</th><th>Judul / Penulis</th>
+              <th>Kategori</th><th>Harga</th><th>Stok</th><th>Status</th>
+            </tr>
+          </thead>
+          <tbody id="tbody-katalog"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="kartu">
+      <h2>Tambah Stok Baru</h2>
+      <form id="form-stok" novalidate>
+        <div class="form-grid">
+          <div><label for="s-kode">Kode</label><input type="text" id="s-kode" placeholder="BK-006"></div>
+          <div><label for="s-judul">Judul</label><input type="text" id="s-judul"></div>
+          <div><label for="s-penulis">Penulis</label><input type="text" id="s-penulis"></div>
+          <div><label for="s-kategori">Kategori</label><input type="text" id="s-kategori"></div>
+          <div><label for="s-harga">Harga (Rp)</label><input type="number" id="s-harga" min="0"></div>
+          <div><label for="s-stok">Stok</label><input type="number" id="s-stok" min="0"></div>
+        </div>
+        <button type="submit" class="btn">+ Tambah ke Katalog</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">&copy; 2026 BukuKita - Tugas UTS Pemrograman Web 1</footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

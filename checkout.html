@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pemesanan - BukuKita</title>
+  <link rel="icon" href="assets/logo.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="checkout">
+  <header id="header" class="site-header"></header>
+
+  <main>
+    <h1>Pemesanan Buku</h1>
+
+    <section class="kartu">
+      <h2>Pilih Buku</h2>
+      <div class="baris">
+        <div><label for="pilih-buku">Buku</label><select id="pilih-buku"></select></div>
+        <div><label for="qty">Jumlah</label><input type="number" id="qty" min="1" value="1"></div>
+        <button type="button" id="btn-tambah" class="btn">+ Tambah</button>
+      </div>
+      <div class="tabel-wrap">
+        <table>
+          <thead><tr><th>Judul</th><th>Harga</th><th>Jumlah</th><th>Subtotal</th><th>Aksi</th></tr></thead>
+          <tbody id="tbody-keranjang"></tbody>
+          <tfoot><tr><th colspan="3">Total</th><th colspan="2" id="total">Rp 0</th></tr></tfoot>
+        </table>
+      </div>
+    </section>
+
+    <section class="kartu">
+      <h2>Data Pemesan &amp; Pembayaran</h2>
+      <form id="form-pesan" novalidate>
+        <div class="form-grid">
+          <div><label for="nama">Nama Pemesan</label><input type="text" id="nama"></div>
+          <div><label for="telp">No. Telepon</label><input type="tel" id="telp" placeholder="08123456789"></div>
+          <div><label for="alamat">Alamat Pengiriman</label><input type="text" id="alamat"></div>
+          <div>
+            <label for="ekspedisi">Ekspedisi</label>
+            <select id="ekspedisi"><option>JNE Reguler</option><option>J&amp;T Express</option><option>SiCepat</option></select>
+          </div>
+          <div>
+            <label for="metode">Metode Pembayaran</label>
+            <select id="metode"><option>Transfer Bank</option><option>E-Wallet</option><option>COD</option></select>
+          </div>
+        </div>
+        <button type="submit" class="btn">Buat Pesanan</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">&copy; 2026 BukuKita - Tugas UTS Pemrograman Web 1</footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

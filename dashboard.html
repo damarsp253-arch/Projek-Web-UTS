@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - BukuKita</title>
+  <link rel="icon" href="assets/logo.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="dashboard">
+  <header id="header" class="site-header"></header>
+
+  <main>
+    <section class="banner">
+      <h1 id="greeting">Selamat Datang</h1>
+      <p id="waktu-lokal"></p>
+    </section>
+
+    <section>
+      <h2>Menu Utama</h2>
+      <div class="grid-menu">
+        <a class="menu-kartu" href="stok.html">
+          <strong>📚 Informasi Stok / Katalog</strong>
+          <span>Lihat dan tambah stok buku.</span>
+        </a>
+        <a class="menu-kartu" href="tracking.html">
+          <strong>🚚 Tracking Pengiriman</strong>
+          <span>Lacak paket dengan Nomor DO.</span>
+        </a>
+        <button type="button" class="menu-kartu" id="menu-laporan">
+          <strong>📊 Laporan Pemesanan</strong>
+          <span>Rekap pesanan dan pendapatan.</span>
+        </button>
+        <button type="button" class="menu-kartu" id="menu-history">
+          <strong>🧾 History Transaksi</strong>
+          <span>Daftar seluruh transaksi.</span>
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">&copy; 2026 BukuKita - Tugas UTS Pemrograman Web 1</footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

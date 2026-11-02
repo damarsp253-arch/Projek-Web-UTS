@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tracking - BukuKita</title>
+  <link rel="icon" href="assets/logo.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="tracking">
+  <header id="header" class="site-header"></header>
+
+  <main>
+    <section class="kartu">
+      <h1>Tracking Pengiriman</h1>
+      <form id="form-cari" class="baris" novalidate>
+        <div>
+          <label for="no-do">Nomor Delivery Order</label>
+          <input type="text" id="no-do" placeholder="contoh: DO2026001">
+        </div>
+        <button type="submit" class="btn">Cari</button>
+      </form>
+    </section>
+
+    <section id="hasil" class="kartu" hidden></section>
+  </main>
+
+  <footer class="site-footer">&copy; 2026 BukuKita - Tugas UTS Pemrograman Web 1</footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
